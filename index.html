@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Pong HTML Game</title>
+  <meta charset="UTF-8">
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span{
+    color: #00FF00;
+  }
+  #left{
+    position:absolute;
+    font-size: 100px;
+    top: 90px;
+    left:680px
+  }
+  #right{
+    position:absolute;
+    font-size: 100px;
+    top: 90px;
+    left:805px
+  }
+  </style>
+</head>
+<body>
+<canvas width="750" height="585" id="game"></canvas>
+<p><span id="left">0</span><span id="right">0</span></p>
+<script src="Object.js"></script>
+<script src="Ball.js"></script>
+<script src="play.js"></script>
+<script src="main.js"></script>
+<script src="event.js"></script>
+<script>
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>
